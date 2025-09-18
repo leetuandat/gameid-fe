@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../../assets/images/logo.png";
 import './style.css';
 
 const Header = () => {
+  const logo = "/assets/images/logo.png";
   return (
     <header className="header">
       <div className="logo-container">

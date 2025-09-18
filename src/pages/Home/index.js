@@ -1,30 +1,34 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./home.css"; // nếu bạn có CSS cho các class đã dùng'
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
+// src/index.js (hoặc main.jsx)
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js"; // bắt buộc để tabs hoạt động
 
 // Nếu ảnh nằm trong src/assets/images:
-import pay2 from "../../assets/images/pay2.png";
-import iosDown2 from "../../assets/images/IOSdown2.png";
-import androidDown2 from "../../assets/images/Androiddown2.png";
-import giftcode from "../../assets/images/giftcode.png";
-
-import legend from "../../assets/images/legned.png";
-import iosDown1 from "../../assets/images/IOSdown1.png";
-import androidDown1 from "../../assets/images/Androiddown1.png";
-import webDown from "../../assets/images/Webdown.png";
-import pay1 from "../../assets/images/pay1.png";
-
-import btn1 from "../../assets/images/btn1.png";
-import btn2 from "../../assets/images/btn2.png";
-import btn3 from "../../assets/images/btn3.png";
-import btn4 from "../../assets/images/btn4.png";
 
 const Home = () => {
+  const pay2 = "/assets/images/pay2.png";
+  const iosDown2 = "/assets/images/IOSdown2.png";
+  const androidDown2 = "/assets/images/Androiddown2.png";
+  const giftcode = "/assets/images/giftcode.png";
+
+  const legend = "/assets/images/legned.png";
+  const iosDown1 = "/assets/images/IOSdown1.png";
+  const androidDown1 = "/assets/images/Androiddown1.png";
+  const webDown = "/assets/images/Webdown.png";
+  const pay1 = "/assets/images/pay1.png";
+
+  const btn1 = "/assets/images/btn1.png";
+  const btn2 = "/assets/images/btn2.png";
+  const btn3 = "/assets/images/btn3.png";
+  const btn4 = "/assets/images/btn4.png";
+
   return (
     <>
-    <Header />
+      <Header />
       {/* Section One */}
       <div className="main-content">
         {/* Hero Section */}
@@ -147,15 +151,21 @@ const Home = () => {
                 >
                   <ul>
                     <li>
-                      <Link to="/tin-tuc/1">[SK Web]: Mở Cửa Hàng Đồng Giá Tháng 08/2025</Link>
+                      <Link to="/tin-tuc/1">
+                        [SK Web]: Mở Cửa Hàng Đồng Giá Tháng 08/2025
+                      </Link>
                       <span className="date">08/2025</span>
                     </li>
                     <li>
-                      <Link to="/tin-tuc/2">[SK Web]: Mở Cửa Hàng Đồng Giá Tháng 08/2025</Link>
+                      <Link to="/tin-tuc/2">
+                        [SK Web]: Mở Cửa Hàng Đồng Giá Tháng 08/2025
+                      </Link>
                       <span className="date">08/2025</span>
                     </li>
                     <li>
-                      <Link to="/tin-tuc/3">[SK Web]: Mở Cửa Hàng Đồng Giá Tháng 08/2025</Link>
+                      <Link to="/tin-tuc/3">
+                        [SK Web]: Mở Cửa Hàng Đồng Giá Tháng 08/2025
+                      </Link>
                       <span className="date">08/2025</span>
                     </li>
                   </ul>
@@ -169,11 +179,15 @@ const Home = () => {
                 >
                   <ul>
                     <li>
-                      <Link to="/su-kien/1">[SK Web]: Mở Cửa Hàng Đồng Giá Tháng 08/2025</Link>
+                      <Link to="/su-kien/1">
+                        [SK Web]: Mở Cửa Hàng Đồng Giá Tháng 08/2025
+                      </Link>
                       <span className="date">08/2025</span>
                     </li>
                     <li>
-                      <Link to="/su-kien/2">[SK Web]: Mở Cửa Hàng Đồng Giá Tháng 08/2025</Link>
+                      <Link to="/su-kien/2">
+                        [SK Web]: Mở Cửa Hàng Đồng Giá Tháng 08/2025
+                      </Link>
                       <span className="date">08/2025</span>
                     </li>
                   </ul>
@@ -187,7 +201,9 @@ const Home = () => {
                 >
                   <ul>
                     <li>
-                      <Link to="/huong-dan/1">[SK Web]: Mở Cửa Hàng Đồng Giá Tháng 08/2025</Link>
+                      <Link to="/huong-dan/1">
+                        [SK Web]: Mở Cửa Hàng Đồng Giá Tháng 08/2025
+                      </Link>
                       <span className="date">08/2025</span>
                     </li>
                   </ul>
@@ -220,14 +236,22 @@ const Home = () => {
           {/* Card 3: Hướng dẫn Giftcode */}
           <div className="col-12 col-sm-6 col-md-3 mb-4 equal-height-col">
             <div className="card1">
-              <img src={btn3} className="card-img-top" alt="Hướng dẫn Giftcode" />
+              <img
+                src={btn3}
+                className="card-img-top"
+                alt="Hướng dẫn Giftcode"
+              />
             </div>
           </div>
 
           {/* Card 4: Hướng dẫn Nạp Thẻ */}
           <div className="col-12 col-sm-6 col-md-3 mb-4 equal-height-col">
             <div className="card1">
-              <img src={btn4} className="card-img-top" alt="Hướng dẫn Nạp Thẻ" />
+              <img
+                src={btn4}
+                className="card-img-top"
+                alt="Hướng dẫn Nạp Thẻ"
+              />
             </div>
           </div>
         </div>

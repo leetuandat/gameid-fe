@@ -16,7 +16,7 @@
   /* Main Content (with background) */
   .main-content {
     position: relative;
-    background-image: url('../../assets/images/mainbanner.jpg');
+    background-image: url('/public/assets/images/mainbanner.jpg');
     background-size: cover;
     background-position: center;
     height: 110vh;
@@ -96,7 +96,7 @@
   .side-content {
     position: absolute;
     right: 0;
-    background-image: url(../../assets/images/sidebg.png);
+    background-image: url(/public/assets/images/sidebg.png);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -141,7 +141,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../../assets/images/bgcontent1.png);
+    background-image: url(/public/assets/images/bgcontent1.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     ;
