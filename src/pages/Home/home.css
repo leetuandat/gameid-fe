@@ -1,0 +1,88 @@
+.hero {
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 24px;
+}
+
+.hero-buttons .btn {
+  padding: 15px;
+  margin: 10px;
+  background-color: #f76b1c;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.code-btn {
+  background-color: #1a73e8;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.banner-item {
+  width: 30%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.banner-item p {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.features {
+  padding: 40px 20px;
+  background-color: #f8f8f8;
+}
+
+.features h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.feature-cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.feature-card {
+  width: 30%;
+  background-color: #fff;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.feature-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.feature-card p {
+  font-size: 18px;
+  margin-top: 10px;
+}

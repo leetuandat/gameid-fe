@@ -1,0 +1,45 @@
+.header {
+  display: flex;
+  justify-content: space-between; /* Để căn logo và menu */
+  align-items: center;
+  padding: 10px 50px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+  flex: 1; /* Cho logo chiếm phần còn lại */
+}
+
+.logo {
+  max-width: 120px;
+  height: auto;
+}
+
+nav {
+  flex: 3; /* Dành không gian cho menu điều hướng */
+  display: flex;
+  justify-content: center; /* Căn giữa menu */
+}
+
+.nav-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #f76b1c; /* Màu hover khi di chuột */
+}

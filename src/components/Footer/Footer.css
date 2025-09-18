@@ -1,0 +1,17 @@
+.footer {
+  background-color: #343a40;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.footer-contact p {
+  font-size: 14px;
+  margin: 5px 0;
+}
