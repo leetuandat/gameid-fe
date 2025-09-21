@@ -6,6 +6,7 @@ import Footer from "../../components/Footer";
 // src/index.js (hoặc main.jsx)
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js"; // bắt buộc để tabs hoạt động
+import HomeCarousel from "../../components/HomeCarousel";
 
 // Nếu ảnh nằm trong src/assets/images:
 
@@ -30,7 +31,7 @@ const Home = () => {
     <>
       <Header />
       {/* Section One */}
-      <div className="main-content">
+      <div className="home-section-one">
         {/* Hero Section */}
         <section className="hero">
           <div className="inner-content">
@@ -85,7 +86,7 @@ const Home = () => {
       {/* End Section One */}
 
       {/* Section Two */}
-      <div className="section-two">
+      <div className="home-section-two">
         <div className="container mt-5">
           <div className="row">
             {/* Left Section (Image Placeholder) */}
@@ -257,6 +258,7 @@ const Home = () => {
         </div>
       </div>
       {/* End Section Three */}
+      <HomeCarousel />
       <Footer />
     </>
   );

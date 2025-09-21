@@ -1,0 +1,116 @@
+.carousel{
+  background-image: url('/public/assets/images/bgdacsac.png');
+  background-repeat: no-repeat;
+  /* không lặp lại */
+  /* hoặc contain tùy ý */
+  /* background-position: center center; */
+  /* căn giữa theo cả X và Y */
+  /* background-size: contain ; */
+  height: 100vh;
+}
+.carousel-wrapper {
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+
+}
+
+
+.slide {
+  padding-top: 100px;
+  text-align: center;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Slide 2 ảnh chồng */
+/* Slide 2 ảnh chồng */
+/* Slide 2 ảnh chồng */
+.slide-two .image-stack {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  /* cố định hoặc responsive */
+  overflow: hidden;
+  display: flex;
+  /* dùng flex để căn giữa ảnh */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ảnh sau: căn giữa, chiếm tối đa width */
+.slide-two .img-bottom {
+  width: 100%;
+  height: 30%;
+  object-fit: cover;
+  /* hoặc cover nếu muốn che hết */
+  z-index: 1;
+}
+
+/* Ảnh trước: đè lên, căn giữa tuyệt đối */
+.slide-two .img-top {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 35%;
+  /* tuỳ chỉnh */
+  height: auto;
+  z-index: 2;
+}
+
+
+/* Nút custom */
+.custom-arrow {
+  position: absolute;
+  top: 45%;
+  /* chỉnh cao/thấp */
+  transform: translateY(-50%);
+  border: none;
+  background: none;
+  cursor: pointer;
+  z-index: 20;
+  padding: 0;
+}
+
+.custom-arrow img {
+  width: 40px;
+  /* chỉnh kích thước icon */
+  height: 40px;
+  object-fit: contain;
+  transition: transform 0.3s;
+}
+
+.custom-arrow:hover img {
+  transform: scale(1.1);
+}
+
+/* vị trí trái/phải */
+.custom-arrow.left {
+  left: -60px;
+  /* chỉnh xa/gần so với slider */
+}
+
+.custom-arrow.right {
+  right: -60px;
+}
+
+/* Dots custom */
+.custom-dots li button {
+  background: #bbb !important;
+  border-radius: 50%;
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.custom-dots li.slick-active button {
+  background: red !important;
+}
+
+.carousel-wrapper .title {
+  color: red;
+  font-size: 26px;
+}
